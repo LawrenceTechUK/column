@@ -1,0 +1,55 @@
+.column {
+  float: left;
+  padding: 10px;
+  margin: 30px;
+  color: white;
+  allow-transparency: true;
+}
+
+.fake {
+ color:ffffff;
+}
+
+/* Left and right column */
+.column.middlel {
+  width: 42%;
+  border-left: 1px solid #333;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.sidep {
+  width: 25%;
+}
+
+.column.sidel {
+  width: 1%;
+}
+
+.column.sidell {
+  width: 24%;
+}
+.column.sidex {
+  width: 39%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
